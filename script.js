@@ -14,13 +14,13 @@ function compute() {
     }
 
 if (int === "si") {
-    var sip = (p * r * t) / 100
-    var ta = p + sip
+    var sip = (principal * rate * year) / 100
+    var ta = principal + sip
     document.getElementById("i").innerHTML = sip;
     document.getElementById("a").innerHTML = ta;
   } else {
-    var cta = p * (Math.pow((1 + r / 100), t))
-    var cmp = cta - p
+    var cta = principal * (Math.pow((1 + r / 100), t))
+    var cmp = cta - principal
     document.getElementById("i").innerHTML = cmp;
     document.getElementById("a").innerHTML = cta;
   }
